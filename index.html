@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Gemo Plus — Gemorroydan xalos bo'ling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "896735689842613");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=896735689842613&ev=PageView&noscript=1"
+    /></noscript>
+  </head>
+  <body>
+    <div id="sb"></div>
+
+    <!-- HEADER -->
+    <header>
+      <div class="logo">Gemo<span>Plus</span></div>
+      <button class="hbtn" onclick="openModal()">Buyurtma berish</button>
+    </header>
+
+    <section id="hero">
+      <div class="c">
+        <h1 class="hero-h">
+          Gemo Plus bilan Atigi <em>18 kun ichida</em> gemorroyning eng
+          og'rig'idan xalos bo'ling
+        </h1>
+
+        <div class="hero-media">
+          <div class="hm-video">
+            <video autoplay muted loop playsinline>
+              <source src="img/intro/intro-copy.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="hm-img">
+            <img src="./img/intro/intro.png" alt="Gemo Plus" />
+          </div>
+        </div>
+
+        <p class="hero-d">
+          Gemorroy va og'riqni kamaytirishga o'simlik moylari asosidagi maxsus
+          formulasi
+        </p>
+
+        <ul class="hero-ul">
+          <li>Yallig'lanish va shishni kamaytiradi</li>
+          <li>Qichishish, achishish va og'riqni yengillashtiradi</li>
+          <li>Qon ketishini to'xtatishga yordam beradi</li>
+          <li>Uy sharoitida qo'llash uchun mos</li>
+        </ul>
+
+        <div class="trow">
+          <span class="tlbl">⏱ Aksiya tugashiga:</span>
+          <div class="tblocks">
+            <span class="tu" id="th">00</span><span class="td">:</span>
+            <span class="tu" id="tm">29</span><span class="td">:</span>
+            <span class="tu" id="ts">59</span>
+          </div>
+        </div>
+
+        <div class="fcard">
+          <div class="sbadge">🔥 Hozir buyurtma bering — 100% chegirma!</div>
+          <div class="f-group">
+            <input class="fi" type="text" placeholder="Ismingiz" id="n1" />
+          </div>
+          <div class="f-group">
+            <div class="pw">
+              <div class="ppre">+998</div>
+              <input
+                class="pf"
+                type="tel"
+                placeholder="-- --- -- --"
+                id="p1"
+                maxlength="12"
+                oninput="pm(this)"
+              />
+            </div>
+          </div>
+          <button class="bm" onclick="sf('n1', 'p1')">
+            📞 BUYURTMA BERISH
+          </button>
+          <div class="fhint">*Sizga operatorimiz qo'ng'iroq qiladi</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 2 — STAGES ══════════════════════════════ -->
+    <section id="stages">
+      <div class="c">
+        <h2 class="h1">Gemorroy bosqichlari</h2>
+        <div class="sg">
+          <div class="sc s1">
+            <img src="img/2й блок/one.jpg" alt="1-bosqich" loading="lazy" />
+            <div class="scb">
+              <div class="scn">Bosqich 01</div>
+              <div class="sct">Boshlang'ich alomatlar</div>
+              <div class="scd">
+                Qichishish, yengil achishish, hojatdan keyin yoqimsiz hislar.
+              </div>
+              <div class="scn2">✓ 1 oy ichida yengillik seziladi</div>
+            </div>
+          </div>
+
+          <div class="sc s2">
+            <img src="img/2й блок/two.jpg" alt="1-bosqich" loading="lazy" />
+
+            <div class="scb">
+              <div class="scn">Bosqich 02</div>
+              <div class="sct">Kuchayish</div>
+              <div class="scd">
+                Og'riq, qon kelishi, tugunlar shakllana boshlaydi.
+              </div>
+              <div class="scn2">✓ 1–2 oy ichida yaxshilanish</div>
+            </div>
+          </div>
+
+          <div class="sc s3">
+            <img src="img/2й блок/tree.jpg" alt="1-bosqich" loading="lazy" />
+
+            <div class="scb">
+              <div class="scn">Bosqich 03</div>
+              <div class="sct">Kuchli gemorroy</div>
+              <div class="scd">
+                Kuchli og'riq, yallig'lanish, kattalashgan tugunlar.
+              </div>
+              <div class="scn2">✓ Kurs odatda 2–3 oy</div>
+            </div>
+          </div>
+
+          <div class="sc s4">
+            <img src="img/2й блок/four.jpg" alt="1-bosqich" loading="lazy" />
+
+            <div class="scb">
+              <div class="scn">Bosqich 04</div>
+              <div class="sct">Rivojlangan bosqich</div>
+              <div class="scd">
+                Doimiy noqulaylik, aniq ko'rinadigan tugunlar.
+              </div>
+              <div class="scn2">✓ Kurs taxminan 6 oy</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swarn">
+          <p>
+            Muammo jiddiylashishini kutmang —
+            <span>sog'lig'ingizga hozirdan g'amxo'rlik qiling.</span>
+          </p>
+          <button
+            class="bm"
+            style="max-width: 300px; margin: 0 auto; display: block"
+            onclick="openModal()"
+          >
+            Hozir buyurtma berish
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 3 — COMPLICATIONS ═══════════════════════ -->
+    <section id="comp">
+      <div class="c">
+        <h2 class="h1">Gemorroy rivojlanishi va <em>asoratlari</em></h2>
+        <p class="sub" style="color: rgba(255, 255, 255, 0.65)">
+          Agar alomatlarga e'tibor berilmasa, gemorroy jiddiy noqulayliklarga
+          olib kelishi mumkin:
+        </p>
+
+        <div class="cvids">
+          <div class="cv-item">
+            <div class="cvs">
+              <video autoplay muted loop playsinline>
+                <source src="img/3й блок/12.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="cv-txt">doimiy og'riq va achishish</div>
+          </div>
+
+          <div class="cv-item">
+            <div class="cvm">
+              <video autoplay muted loop playsinline>
+                <source src="img/3й блок/0313 (2).mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="cv-txt">to'qimalarning yallig'lanishi</div>
+          </div>
+
+          <div class="cv-item">
+            <div class="cvs">
+              <video autoplay muted loop playsinline>
+                <source src="img/3й блок/1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="cv-txt">qon ketishi</div>
+          </div>
+
+          <div class="cv-item">
+            <div class="cvs">
+              <video autoplay muted loop playsinline>
+                <source
+                  src="img/3й блок/hf_20260313_111745_9535382d-037d-427d-9acc-ffef5fb364ef.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="cv-txt">og'riqli tugunlarning paydo bo'lishi</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ═══ 3 — DOCTOR ═══════════════════════ -->
+
+    <section id="doc">
+      <div class="c">
+        <h2 class="doc-h1">Mutaxassis nima deydi</h2>
+
+        <div class="doc-layout">
+          <div class="doc-content">
+            <p class="doc-p">
+              <strong
+                >Gemorroy — juda ko'p odamlar duch keladigan muammo.</strong
+              >
+            </p>
+            <p class="doc-p">
+              Asosiy vazifa — yallig'lanishni kamaytirish, to'qimalar holatini
+              yaxshilash va noxush alomatlarni yengillashtirish.
+            </p>
+            <p class="doc-p">
+              O'simlik moylari asosidagi tabiiy vositalar, masalan Gemo Plus,
+              qo'llab-quvvatlovchi parvarish sifatida ishlatilishi mumkin.
+            </p>
+            <ul class="doc-list">
+              <li>• yallig'lanishni kamaytirish</li>
+              <li>• tirnashishni pasaytirish</li>
+              <li>• to'qimalarning tiklanishini qo'llab-quvvatlash</li>
+            </ul>
+          </div>
+
+          <div class="doc-img-container">
+            <img
+              src="img/4й блок/hf_20260313_120735_05812b82-7628-4733-96d2-02992e190dc2.png"
+              alt="Mutaxassis"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 5 — INGREDIENTS ════════════════════════ -->
+
+    <section id="ing">
+      <div class="c">
+        <h2 class="h1" style="text-align: center">
+          Gemo Plus - tarkibida yallig'lanishni kamaytirish, noqulaylikni
+          pasaytirish va to'qimalarni tiklanishni qo'llab-quvvatlashga yordam
+          beradigan tabiiy komponentlar mavjud
+        </h2>
+
+        <div class="ing-grid">
+          <div class="icard cl">
+            <img src="img/5й блок/2026-03-13_18-17-05.png" alt="Evkaliptol" />
+            <div class="iname">Evkaliptol</div>
+            <div class="idesc">
+              To'qimalardagi yallig'lanish va tirnashishni kamaytirishga yordam
+              beradi , achishish va noqulaylikni yengillashtiradi
+            </div>
+          </div>
+
+          <div class="iimain">
+            <img src="img/5й блок/гайдбук для операторов.png" alt="Gemo Plus" />
+          </div>
+
+          <div class="icard cr">
+            <img src="img/5й блок/2026-03-14_15-59-45.png" alt="Borneol" />
+            <div class="iname">Borneol</div>
+            <div class="idesc">
+              Tinchlantiruvchi ta'sirga ega bo'lib gemorroy tugunlari sohasidagi
+              og'riqni kamaytirishga yordam beradi
+            </div>
+          </div>
+
+          <div class="icard cl">
+            <img src="img/5й блок/TERPENES-10-750x422.jpg" alt="Evkaliptol" />
+            <div class="iname">Evkaliptol</div>
+            <div class="idesc">
+              To'qimalardagi yallig'lanish va tirnashishni kamaytirishga yordam
+              beradi , achishish va noqulaylikni yengillashtiradi
+            </div>
+          </div>
+
+          <div class="icard cr">
+            <img src="img/5й блок/TERPENES-2.jpg" alt="Terpineol" />
+            <div class="iname">Terpineol</div>
+            <div class="idesc">
+              To'qimalardagi shishni kamaytirishga va yallig'lanish
+              jarayonlarini pasaytirishga yordam beradi.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ═══ 6 — RESULTS ════════════════════════════ -->
+    <section id="res">
+      <div class="c">
+        <h2 class="h1">Qo'llangandan keyingi <em>ta'sir</em></h2>
+        <p class="sub">
+          Muntazam qo'llangandan keyin ko'plab foydalanuvchilar sezilarli
+          yaxshilanishni sezadi.
+        </p>
+
+        <div
+          class="rvids"
+          style="
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+            margin: auto;
+          "
+        >
+          <div class="rvc">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              style="
+                width: 100%;
+                aspect-ratio: 9/16;
+                object-fit: contain;
+                background: #000;
+                border-radius: 12px;
+              "
+            >
+              <source
+                src="img/6й блок/hf_20260313_120633_53cdb861-e5c2-487a-a816-55ae17026ba0.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="rvl">
+              Yallig'lanishning kamayishi Noqulaylik kamayadi, hojatga borish
+              osonlashadi.
+            </div>
+          </div>
+          <div class="rvc">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              style="
+                width: 100%;
+                aspect-ratio: 9/16;
+                object-fit: contain;
+                background: #000;
+                border-radius: 12px;
+              "
+            >
+              <source src="img/6й блок/0313.mp4" type="video/mp4" />
+            </video>
+            <div class="rvl">
+              Yallig'lanishning kamayishi asta-sekin tirnashish va noqulaylik
+              pasayadi
+            </div>
+          </div>
+
+          <div class="rvc">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              style="
+                width: 100%;
+                aspect-ratio: 9/16;
+                object-fit: contain;
+                background: #000;
+                border-radius: 12px;
+              "
+            >
+              <source
+                src="img/6й блок/hf_20260313_143525_fa975976-2285-4243-a243-6027de42df81.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="rvl">
+              To'qimalarning tiklanishini muntazam qo'llashga yordam beradi.
+              Muntazam qo'llash natijasida sezilarli darajada yordam berishi
+              mumkin.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 7 — BEFORE/AFTER ══════════════════════ -->
+    <section id="ba">
+      <div class="c">
+        <h2 class="h1" style="text-align: center; font-size: 22px">
+          Oldin va Keyin
+        </h2>
+
+        <div class="bag">
+          <div class="ba-item">
+            <div class="ba-pair">
+              <div class="bac">
+                <img
+                  src="img/7й блок Фото до после/hf_20260314_092216_57a6a2da-a0ac-4a8c-86aa-0b3c62184b8e (1).png"
+                  alt="Before"
+                />
+              </div>
+              <div class="ba-sep">→</div>
+              <div class="bac">
+                <img
+                  src="img/7й блок Фото до после/hf_20260314_092251_b9179ee5-2934-4805-b56e-ebe903bd005d (1).png"
+                  alt="After"
+                />
+              </div>
+            </div>
+            <div class="bal">Natija №1</div>
+          </div>
+
+          <div class="ba-item">
+            <div class="ba-pair">
+              <div class="bac">
+                <img
+                  src="img/7й блок Фото до после/hf_20260314_092312_8cdc2b2e-d05c-419e-95f9-74c594008042.png"
+                  alt="Before"
+                />
+              </div>
+              <div class="ba-sep">→</div>
+              <div class="bac">
+                <img
+                  src="img/7й блок Фото до после/hf_20260314_092328_1ac420f9-3dae-4300-8908-fdac63e59a0f.png"
+                  alt="After"
+                />
+              </div>
+            </div>
+            <div class="bal">Natija №2</div>
+          </div>
+
+          <div class="ba-item">
+            <div class="ba-pair">
+              <div class="bac">
+                <img
+                  src="img/7й блок Фото до после/hf_20260314_092514_5583473e-65fe-4971-86bb-644c2d6387d6.png"
+                  alt="Before"
+                />
+              </div>
+              <div class="ba-sep">→</div>
+              <div class="bac">
+                <img
+                  src="img/7й блок Фото до после/hf_20260314_092501_15d68e91-c6ba-41eb-bcbf-c2d12d316319.jpg"
+                  alt="After"
+                />
+              </div>
+            </div>
+            <div class="bal">Natija №3</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ═══ 8 — REVIEWS ═══════════════════════════ -->
+    <section id="rev">
+      <div class="c">
+        <h2 class="h1">Sharhlar</h2>
+
+        <div class="rev-grid">
+          <div class="rev-item">
+            <img
+              src="img/8й блок Отзывы/photo_2026-03-14_14-54-03.jpg"
+              alt="Sharh 1"
+              loading="lazy"
+            />
+          </div>
+          <div class="rev-item">
+            <img
+              src="img/8й блок Отзывы/saida.png"
+              alt="Sharh 2"
+              loading="lazy"
+            />
+          </div>
+          <div class="rev-item">
+            <img
+              src="img/8й блок Отзывы/qodir.png"
+              alt="Sharh 3"
+              loading="lazy"
+            />
+          </div>
+          <div class="rev-item">
+            <img
+              src="img/8й блок Отзывы/abdu.png"
+              alt="Sharh 4"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ LICENSES ══════════════════════════════ -->
+    <section id="lic">
+      <div class="c">
+        <h2 class="h1" style="text-align: center; margin-bottom: 25px">
+          Sifat va <em>kafolat</em>
+        </h2>
+
+        <div class="lic-wrapper">
+          <div class="prod-img">
+            <img src="prod.png" alt="Gemo Plus Mahsuloti" loading="lazy" />
+          </div>
+
+          <div class="lic-img">
+            <img
+              src="lecensiya.jpg"
+              alt="Gemo Plus Litsenziyasi"
+              loading="lazy"
+            />
+            <div class="lic-tag">Rasmiy litsenziya</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FAQ ═══════════════════════════════════ -->
+    <section id="faq">
+      <div class="c">
+        <h2 class="h1">Ko'p beriladigan <em>savollar</em></h2>
+        <div class="flist">
+          <div class="fi2">
+            <div class="fq" onclick="tf(this)">
+              Bu vosita og'riqni kamaytirishga yordam beradimi?
+              <span class="fqico">+</span>
+            </div>
+            <div class="fa">
+              Tarkibidagi tabiiy komponentlar yallig'lanishni kamaytirishga va
+              noxush hislarni yengillashtirishga yordam berishi mumkin.
+            </div>
+          </div>
+          <div class="fi2">
+            <div class="fq" onclick="tf(this)">
+              Vosita qon ketishini to'xtatadimi?
+              <span class="fqico">+</span>
+            </div>
+            <div class="fa">
+              Yengil qon ketish holatlarida vosita yallig'lanishni kamaytirishga
+              va to'qimalarning tiklanishini qo'llab-quvvatlashga yordam berishi
+              mumkin.
+            </div>
+          </div>
+          <div class="fi2">
+            <div class="fq" onclick="tf(this)">
+              Bu vosita barcha holatlarda yordam beradimi?
+              <span class="fqico">+</span>
+            </div>
+            <div class="fa">
+              Gemorroy tibbiy muammo hisoblanadi. Vosita alomatlarni
+              yengillashtirishga yordam berishi mumkin, ammo og'ir bosqichlarda
+              shifokorga murojaat qilish zarur.
+            </div>
+          </div>
+          <div class="fi2">
+            <div class="fq" onclick="tf(this)">
+              Moyni qanday qo'llash kerak?
+              <span class="fqico">+</span>
+            </div>
+            <div class="fa">
+              <div class="usteps">
+                <div class="ustep">
+                  <i>1</i>Paxta tamponiga oz miqdorda moy tomizing.
+                </div>
+                <div class="ustep">
+                  <i>2</i>Muammoli hududni ehtiyotkorlik bilan ishlov bering.
+                </div>
+                <div class="ustep">
+                  <i>3</i>Zarur bo'lsa, tamponni 15–20 daqiqaga qoldiring.
+                </div>
+                <div class="ustep">
+                  <i>4</i>Kuniga 1–2 marta qo'llash tavsiya etiladi.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ob">
+      <div class="c">
+        <div class="fcard">
+          <div class="sbadge">🔥 MAXSUS TAKLIF</div>
+          <h2 class="mttl">Hozir buyurtma bering</h2>
+
+          <div class="f-group">
+            <input class="fi" type="text" placeholder="Ismingiz" id="n2" />
+          </div>
+
+          <div class="f-group">
+            <div class="pw">
+              <div class="ppre">+998</div>
+              <input
+                class="pf"
+                type="tel"
+                placeholder="-- --- -- --"
+                id="p2"
+                maxlength="12"
+                oninput="pm(this)"
+              />
+            </div>
+          </div>
+
+          <button class="bm" onclick="sf('n2', 'p2')">
+            📞 BUYURTMA BERISH
+          </button>
+
+          <div class="fhint">*Operator 5 daqiqada bog'lanadi</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Gemo Plus — Barcha huquqlar himoyalangan</p>
+      <p>
+        Ushbu mahsulot dori vositasi emas va tibbiy tashxis o'rnini bosmaydi.
+        Og'ir holatlarda shifokorga murojaat qiling.
+      </p>
+    </footer>
+
+    <button class="fab" onclick="openModal()">Buyurtma berish 🔥</button>
+
+    <div class="mo" id="modal" onclick="cmo(event)">
+      <div class="mbox">
+        <button class="mx" onclick="cm()">✕</button>
+
+        <div class="mttl">Buyurtma berish</div>
+
+        <div class="f-group" style="margin-bottom: 10px">
+          <input class="fi" type="text" placeholder="Ismingiz" id="nm" />
+        </div>
+
+        <div class="f-group" style="margin-bottom: 12px">
+          <div class="pw">
+            <div class="ppre">+998</div>
+            <input
+              class="pf"
+              type="tel"
+              placeholder="-- --- -- --"
+              id="pm2"
+              maxlength="12"
+              oninput="pm(this)"
+            />
+          </div>
+        </div>
+
+        <button class="bm" onclick="sf('nm', 'pm2', true)">
+          📞 TASDIQLASH
+        </button>
+
+        <div class="fhint">*Operator tez orada bog'lanadi</div>
+      </div>
+    </div>
+
+    <script>
+      /* SNACKBAR */
+      function snack(type, title, msg) {
+        var c = document.getElementById("sb"),
+          el = document.createElement("div");
+        el.className = "snack " + type;
+        el.innerHTML =
+          '<div class="snack-icon">' +
+          (type === "ok" ? "✅" : "⚠️") +
+          "</div>" +
+          '<div class="snack-body"><div class="snack-ttl">' +
+          title +
+          '</div><div class="snack-msg">' +
+          msg +
+          "</div></div>" +
+          '<button class="snack-x" onclick="ds(this.parentElement)">✕</button>' +
+          '<div class="snack-bar"></div>';
+        c.appendChild(el);
+        setTimeout(function () {
+          ds(el);
+        }, 3500);
+      }
+      function ds(el) {
+        if (!el || el.classList.contains("hide")) return;
+        el.classList.add("hide");
+        setTimeout(function () {
+          if (el.parentElement) el.parentElement.removeChild(el);
+        }, 300);
+      }
+
+      /* TIMER */
+      (function () {
+        var e = Date.now() + (29 * 60 + 59) * 1000;
+        function t() {
+          var d = Math.max(0, e - Date.now());
+          document.getElementById("th").textContent = String(
+            Math.floor(d / 3600000),
+          ).padStart(2, "0");
+          document.getElementById("tm").textContent = String(
+            Math.floor((d % 3600000) / 60000),
+          ).padStart(2, "0");
+          document.getElementById("ts").textContent = String(
+            Math.floor((d % 60000) / 1000),
+          ).padStart(2, "0");
+          if (d > 0) setTimeout(t, 1000);
+        }
+        t();
+      })();
+
+      /* PHONE MASK */
+      function pm(el) {
+        var v = el.value.replace(/\D/g, "").substring(0, 9),
+          o = "";
+        if (v.length > 0) o = v.substring(0, 2);
+        if (v.length > 2) o += " " + v.substring(2, 5);
+        if (v.length > 5) o += " " + v.substring(5, 7);
+        if (v.length > 7) o += " " + v.substring(7, 9);
+        el.value = o;
+      }
+
+      /* FAQ */
+      function tf(el) {
+        var item = el.parentElement;
+        document.querySelectorAll(".fi2").forEach(function (i) {
+          if (i !== item) i.classList.remove("open");
+        });
+        item.classList.toggle("open");
+      }
+
+      /* MODAL */
+      function openModal() {
+        document.getElementById("modal").classList.add("open");
+      }
+      function cm() {
+        document.getElementById("modal").classList.remove("open");
+      }
+      function cmo(e) {
+        if (e.target === document.getElementById("modal")) cm();
+      }
+
+      /* FORM */
+      /* FORM SUBMIT */
+      function sf(nid, pid, isModal) {
+        var n = document.getElementById(nid).value.trim();
+        var p = document.getElementById(pid).value;
+        var d = p.replace(/\D/g, "");
+
+        if (!n || n.length < 2) {
+          snack(
+            "err",
+            "Ism kiritilmadi",
+            "Iltimos, to'liq ismingizni kiriting.",
+          );
+          return;
+        }
+        if (d.length < 9) {
+          snack(
+            "err",
+            "Noto'g'ri raqam",
+            "Telefon raqamingizni to'liq kiriting.",
+          );
+          return;
+        }
+
+        // --- FACEBOOK LEAD TRACKING ---
+        if (typeof fbq === "function") {
+          fbq("track", "Lead");
+          console.log("Meta Pixel: Lead tracked!");
+        }
+        // ------------------------------
+
+        if (isModal) cm();
+
+        document.getElementById(nid).value = "";
+        document.getElementById(pid).value = "";
+
+        snack(
+          "ok",
+          "Buyurtma qabul qilindi!",
+          "Operatorimiz tez orada qo'ng'iroq qiladi. 📞",
+        );
+      }
+    </script>
+  </body>
+</html>
